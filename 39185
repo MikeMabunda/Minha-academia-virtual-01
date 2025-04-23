@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sobre Nós</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #fff; }
+    header, footer { background: #004d40; color: white; padding: 15px; text-align: center; }
+    main { padding: 30px; max-width: 800px; margin: auto; }
+  </style>
+</head>
+<body>
+  <header><h1>Sobre Nós</h1></header>
+
+  <main>
+    <p>Somos uma plataforma de apoio educacional que oferece serviços personalizados para ajudar estudantes no desenvolvimento de seus trabalhos, estudos e organização acadêmica. Com uma equipe dedicada, fornecemos aulas particulares, suporte na criação de currículos, edição de documentos, e mais, tudo com foco em qualidade e acessibilidade. Nosso compromisso é ser a ponte entre o estudante e seu sucesso escolar.</p>
+  </main>
+
+  <footer>&copy; 2025 Minha Academia Virtual</footer>
+</body>
+</html>

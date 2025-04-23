@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato</title>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8811900863789434"
+     crossorigin="anonymous"></script>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #fff; }
+    header, footer { background: #004d40; color: white; padding: 15px; text-align: center; }
+    main { padding: 30px; max-width: 600px; margin: auto; }
+    h2 { color: #004d40; }
+    .contact-item { margin-bottom: 20px; }
+    .contact-item a { color: #f44336; text-decoration: none; font-weight: bold; }
+    .ads { text-align: center; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <header><h1>Contato</h1></header>
+
+  <main>
+    <h2>Fale Conosco</h2>
+    <div class="contact-item">Telefone: <a href="tel:+258869332076">+258 869332076</a></div>
+    <div class="contact-item">WhatsApp: <a href="https://wa.me/258869332076" target="_blank">Conversar agora</a></div>
+    <div class="contact-item">Email: <a href="mailto:contato@minhaacademiavirtual.com">contato@minhaacademiavirtual.com</a></div>
+  </main>
+
+  <div class="ads">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-8811900863789434"
+         data-ad-slot="1234567890"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+  <footer>&copy; 2025 Minha Academia Virtual</footer>
+</body>
+</html>
