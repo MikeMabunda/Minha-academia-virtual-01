@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minha Academia Virtual - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+    header {
+      background-color: #004d40;
+      color: white;
+      padding: 15px 30px;
+      text-align: center;
+    }
+    main {
+      padding: 30px;
+    }
+    .perfil {
+      background: #e0f2f1;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+    .perfil img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+    .perfil-info {
+      display: flex;
+      align-items: center;
+    }
+    .cursos {
+      margin-bottom: 30px;
+    }
+    .curso-item {
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    button {
+      background-color: #f57c00;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #ef6c00;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Minha Academia Virtual - Home</h1>
+  </header>
+
+  <main>
+    <div class="perfil">
+      <div class="perfil-info">
+        <img src="https://via.placeholder.com/80" alt="Avatar do usuário" />
+        <div>
+          <h2>Nome do Usuário</h2>
+          <p>Email: usuario@email.com</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bloco de Anúncio Google AdSense -->
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center;"
+         data-ad-client="ca-pub-8811900863789434"
+         data-ad-slot="1234567890"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    <div class="cursos">
+      <h2>Meus Cursos/Trabalhos</h2>
+      <div class="curso-item">Curso de HTML Básico</div>
+      <div class="curso-item">Trabalho de Redação Acadêmica</div>
+      <div class="curso-item">Curso de Matemática Financeira</div>
+    </div>
+
+    <button>Adicionar Curso/Trabalho</button>
+  </main>
+</body>
+</html>
