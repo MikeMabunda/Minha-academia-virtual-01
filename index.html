@@ -47,12 +47,9 @@
       color: white;
       text-decoration: none;
       font-weight: bold;
-    }
-    nav ul li a:hover {
-      text-decoration: underline;
+      cursor: pointer;
     }
 
-    /* Responsivo */
     @media (max-width: 768px) {
       .menu-toggle {
         display: block;
@@ -85,18 +82,22 @@
       text-align: center;
       padding: 15px;
     }
-    #sobre {
+    #sobre, #cursos {
       display: none;
       background-color: #f1f1f1;
       padding: 20px;
       border-radius: 8px;
     }
-    #sobre h2 {
+    #sobre h2, #cursos h2 {
       color: #004d40;
     }
-    #sobre p {
+    #cursos ul {
+      padding-left: 20px;
+      list-style-type: disc;
+    }
+    #cursos li {
       font-size: 1.1rem;
-      line-height: 1.6;
+      margin-bottom: 8px;
     }
   </style>
 </head>
@@ -108,8 +109,8 @@
   <nav>
     <ul id="menu">
       <li><a href="home.html">Home</a></li>
-      <li><a href="javascript:void(0)" onclick="showSobre()">Sobre Nós</a></li>
-      <li><a href="#">Cursos/Trabalho</a></li>
+      <li><a onclick="toggleSection('sobre')">Sobre Nós</a></li>
+      <li><a onclick="toggleSection('cursos')">Cursos/Trabalho</a></li>
       <li><a href="#">Cadastro/Login</a></li>
       <li><a href="#">Contato</a></li>
     </ul>
@@ -134,9 +135,19 @@
     </p>
   </section>
 
-  <section>
-    <h2>Consultorias e Mentorias</h2>
-    <p>Agende sessões personalizadas com nossos especialistas e acelere seus estudos ou carreira.</p>
+  <section id="cursos">
+    <h2>Cursos e Trabalhos Oferecidos</h2>
+    <ul>
+      <li>Digitação de um trabalho científico</li>
+      <li>Editagem de documentos</li>
+      <li>Criação de apresentação</li>
+      <li>Criação de curriculum</li>
+      <li>Aulas de Matemática</li>
+      <li>Aulas de Física</li>
+      <li>Aulas de Língua Portuguesa</li>
+      <li>Preparação para exame da 10ª classe</li>
+      <li>Preparação para exame da 12ª classe</li>
+    </ul>
   </section>
 </main>
 
@@ -150,9 +161,12 @@
     menu.classList.toggle('show');
   }
 
-  function showSobre() {
-    const sobreSection = document.getElementById('sobre');
-    sobreSection.style.display = (sobreSection.style.display === 'none' || sobreSection.style.display === '') ? 'block' : 'none';
+  function toggleSection(id) {
+    const sections = ['sobre', 'cursos'];
+    sections.forEach(sec => {
+      const el = document.getElementById(sec);
+      el.style.display = (sec === id) ? 'block' : 'none';
+    });
   }
 </script>
 
