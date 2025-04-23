@@ -15,7 +15,7 @@
     header {
       display: flex;
       justify-content: space-between;
-      align-items: flex-start;
+      align-items: center;
       background-color: #004d40;
       color: white;
       padding: 15px 30px;
@@ -27,16 +27,19 @@
       margin: 0;
       font-size: 1.5rem;
     }
-    nav {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
+    .menu-toggle {
+      font-size: 1.5rem;
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+      display: none;
     }
     nav ul {
       list-style: none;
       display: flex;
-      flex-direction: column;
-      gap: 10px;
+      flex-direction: row;
+      gap: 20px;
       margin: 0;
       padding: 0;
     }
@@ -48,6 +51,28 @@
     nav ul li a:hover {
       text-decoration: underline;
     }
+
+    /* Responsivo */
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+      nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: flex-end;
+        background-color: #004d40;
+        position: absolute;
+        top: 60px;
+        right: 30px;
+        padding: 10px;
+        border-radius: 8px;
+      }
+      nav ul.show {
+        display: flex;
+      }
+    }
+
     main {
       padding: 30px;
     }
@@ -60,24 +85,15 @@
       text-align: center;
       padding: 15px;
     }
-    @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
-      nav {
-        align-items: center;
-      }
-    }
   </style>
 </head>
 <body>
 
 <header>
   <h1>Minha Academia Virtual</h1>
+  <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
   <nav>
-    <ul>
+    <ul id="menu">
       <li><a href="home.html">Home</a></li>
       <li><a href="#">Sobre Nós</a></li>
       <li><a href="#">Cursos/Trabalho</a></li>
@@ -101,6 +117,13 @@
 <footer>
   &copy; 2025 Minha Academia Virtual. Todos os direitos reservados.
 </footer>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('show');
+  }
+</script>
 
 </body>
 </html>
