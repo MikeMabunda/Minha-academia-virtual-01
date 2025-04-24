@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Minha Academia Virtual</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .menu-toggle {
+      display: none;
+    }
+    nav {
+      position: absolute;
+      top: 70px;
+      right: 20px;
+      background: #004080;
+      padding: 1rem;
+      border-radius: 10px;
+      display: none;
+    }
+    nav a {
+      color: white;
+      display: block;
+      margin: 0.5rem 0;
+      text-decoration: none;
+    }
+    .menu-icon {
+      cursor: pointer;
+    }
+    .content {
+      padding: 2rem;
+    }
+    .card {
+      background: white;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    button {
+      background-color: orange;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        position: absolute;
+        top: 70px;
+        right: 10px;
+        width: 150px;
+      }
+      .menu-icon {
+        display: block;
+      }
+    }
+  </style>
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('nav');
+      nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Minha Academia Virtual</div>
+    <div class="menu-icon" onclick="toggleMenu()">☰ Menu</div>
+    <nav id="nav">
+      <a href="index.html">Home</a>
+      <a href="sobre.html">Sobre Nós</a>
+      <a href="cursos.html">Cursos/Trabalho</a>
+      <a href="login.html">Cadastro/Login</a>
+      <a href="contato.html">Contacto</a>
+    </nav>
+  </header>
+
+  <div class="content">
+    <div class="card">
+      <h2>Perfil</h2>
+      <p>Informações do usuário aqui...</p>
+    </div>
+    <div class="card">
+      <h2>Meus Cursos/Trabalhos</h2>
+      <p>Lista de cursos ou trabalhos adicionados pelo usuário.</p>
+    </div>
+    <div class="card">
+      <button onclick="alert('Adicionar curso/trabalho')">Adicionar Curso/Trabalho</button>
+    </div>
+  </div>
+
+  <!-- Bloco de anúncio -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8811900863789434"
+     crossorigin="anonymous"></script>
+  <ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-8811900863789434"
+     data-ad-slot="1234567890"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+
+</body>
+</html>
