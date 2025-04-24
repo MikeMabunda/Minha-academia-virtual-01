@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Minha Academia Virtual</title>
+  <link rel="stylesheet" href="style.css">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8811900863789434" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <button id="menu-btn">Menu</button>
+      <div id="menu-items" style="display:none;">
+        <a href="index.html">Home</a><br>
+        <a href="sobre.html">Sobre Nós</a><br>
+        <a href="cursos.html">Cursos/Trabalho</a><br>
+        <a href="login.html">Cadastro/Login</a><br>
+        <a href="contato.html">Contacto</a><br>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <img src="assets/A_logo_for_&quot;Minha_Academia_Virtual&quot;_features_a_gra.png" alt="Logotipo" width="200"><br>
+    <h1>Bem-vindo à Minha Academia Virtual</h1>
+    <img src="assets/students_typing_and_carrying_books_1.png" alt="Estudante digitando trabalho" width="300">
+    <img src="assets/students_typing_and_carrying_books_2.png" alt="Estudante carregando livros" width="300">
+    <p>Escolha uma das opções no menu para começar.</p>
+
+    <!-- Bloco de anúncio -->
+    <div style="margin: 20px 0;">
+      <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-8811900863789434"
+          data-ad-slot="1234567890"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+  </main>
+  <script>
+    document.getElementById("menu-btn").onclick = function() {{
+      const menu = document.getElementById("menu-items");
+      menu.style.display = menu.style.display === "none" ? "block" : "none";
+    }};
+  </script>
+</body>
+</html>
