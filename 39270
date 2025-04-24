@@ -1,0 +1,14 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head><meta charset="UTF-8"><title>Login/Cadastro</title></head>
+<body>
+<h1>Login ou Cadastro</h1>
+<form>
+  <label>Email:</label><input type="email"><br>
+  <label>Senha:</label><input type="password"><br>
+  <button type="submit">Entrar</button>
+  <button type="button">Cadastrar</button>
+</form>
+</body>
+</html>

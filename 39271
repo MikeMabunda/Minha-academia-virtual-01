@@ -1,0 +1,11 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head><meta charset="UTF-8"><title>Contato</title></head>
+<body>
+<h1>Contato</h1>
+<p>Telefone: +258 869332076</p>
+<p>WhatsApp: <a href="https://wa.me/258869332076">Conversar no WhatsApp</a></p>
+<p>Email: exemplo@email.com</p>
+</body>
+</html>
